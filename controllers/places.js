@@ -6,13 +6,13 @@ router.get('/', (req, res) => {
         city: 'Harlem',
         state: 'GA',
         cuisines: 'coffee, bakery',
-        pic: 'https://unsplash.com/photos/flat-lay-photography-of-coffee-latte-ground-coffee-and-coffee-beans-Y3AqmbmtLQI'
+        pic: '/public/images/coffee.jpg'
     }, {
         name: 'Hells Kitchen',
         city: 'Las Vegas',
         state: 'NV',
         cuisines: 'British, American',
-        pic: 'https://unsplash.com/photos/red-flame-iZwQbx4T8bQ'
+        pic: '/public/images/fire.jpg'
     }
     ]
     res.render('places/index', {places})
