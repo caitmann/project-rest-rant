@@ -38,3 +38,11 @@ nav a:hover {
     color: pink;
     text-decoration: none;
 }
+
+.ratingSection {
+    border: 2px solid black;
+}
+
+.commentSection {
+    border: 2px solid black;
+}
