@@ -2,7 +2,7 @@ module.exports = [{
     name: 'Harlem Java House',
     city: 'Harlem',
     state: 'GA',
-    cuisines: 'coffee, bakery',
+    cuisines: 'Coffee, Bakery',
     pic: '/public/images/coffee.jpg'
 }, {
     name: 'Hells Kitchen',
