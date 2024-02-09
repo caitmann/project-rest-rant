@@ -1,14 +1,12 @@
-module.exports = [{
-    name: 'Harlem Java House',
-    city: 'Harlem',
-    state: 'GA',
-    cuisines: 'Coffee, Bakery',
-    pic: '/public/images/coffee.jpg'
-}, {
-    name: 'Hells Kitchen',
-    city: 'Las Vegas',
-    state: 'NV',
-    cuisines: 'British, American',
-    pic: '/public/images/fire.jpg'
-}
-]
+const mongoose = require('mongoose')
+
+const placeSchema = new mongoose.Schema({
+    name: {type: String, required: true},
+    pic: String,
+    cuisines: {type: String, required: true},
+    city: {type: String, default: 'Anytown'},
+    state: {type: String, default: 'USA'},
+    founded: Number
+})
+
+module.exports = mongoose.model('Place', placeSchema)
